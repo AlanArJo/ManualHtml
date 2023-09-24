@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual Html</title>
+    <link rel="stylesheet" href="pruebas.css">
+</head>
+<body>
+  <header>
+    <h1>HTML</h1>
+  </header>
+
+  <main>
+    <div class="menu">
+      <ul class="menu-container">
+        <li><a href="#ESTRUCTURA_BASICA">ESTRUCTURA BASICA</a></li>
+        <li><a href="#LISTAS">LISTAS</a></li>
+        <li><a href="#TABLAS">TABLAS</a></li>
+        <li><a href="#FORMULARIOS">FORMULARIOS</a></li>
+        <li><a href="#MULTIMEDIA">MULTIMEDIA</a></li>
+        <li><a href="#INCRUSTACION">INCRUSTACION</a></li>
+        <li><a href="#CONTENIDO_TEXTUAL">CONTENIDO TEXTUAL</a></li>
+        <li><a href="#AGRUPACION_DE_CONTENIDO">AGRUPACION DE CONTENIDO</a></li>
+        <li><a href="#CONTENIDO_SEMANTICO">CONTENIDO SEMANTICO</a></li>
+        <li><a href="#ELEMENTOS_DE_LINEA_Y_TEXTO">ELEMENTOS DE LINEA Y TEXTO</a></li>
+        <li><a href="#ELEMENTOS_DE_CONTENIDO_INTERACTIVO">ELEMENTOS DE CONTENIDO INTERACTIVO</a></li>
+        <li><a href="#ELEMENTOS_DE_TABULACION_DE_CONTENIDO">ELEMENTOS DE TABULACION DE CONTENIDO</a></li>
+        <li><a href="#ELEMENTOS_DE_EDICION">ELEMENTOS DE EDICION</a></li>
+        <li><a href="#ELEMENTOS_DE_AGRUPACION_DE_CONTENIDO">ELEMENTOS DE AGRUPACION DE CONTENIDO</a></li>
+        <li><a href="#ELEMENTOS_DE_FORMATO_DE_CONTENIDO">ELEMENTOS DE FORMATO DE CONTENIDO</a></li>
+        <li><a href="#ELEMENTOS_DE_COMENTARIO">ELEMENTOS DE COMENTARIO</a></li>
+    </ul>
+    </div>
+    <table class="tcentrado">
+        <caption id="ESTRUCTURA_BASICA">ESTRUCTURA BASICA</caption>
+      <thead>
+        <tr>
+          <th>ELEMENTO</th>
+          <th>DESCRIPCION</th>
+          <th>MAS INFORMACION</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="elemento">&lt;!DOCTYPE&gt;</td>
+          <td>Esta declaración define el tipo de documento y la versión de HTML utilizada en la página. Por ejemplo,&lt;!DOCTYPE html&gt; especifica que se trata de un documento HTML5.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Glossary/Doctype" target="_blank">MAS INFORMACION</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;html&gt;</td>
+          <td>Este es el elemento raíz de un documento HTML. Contiene todo el contenido de la página web y define el inicio y el final del documento.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/html" target="_blank">MAS INFORMACION</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;head&gt;</td>
+          <td>El elemento  &lt;head&gt; se utiliza para contener metadatos y enlaces a recursos externos. Los metadatos pueden incluir información sobre el autor, la codificación de caracteres y la descripción del documento. También se utiliza para enlazar hojas de estilo y scripts.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head" target="_blank">MAS INFORMACION</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;meta&gt;</td>
+          <td>Este elemento se utiliza dentro del &lt;head&gt; para proporcionar metadatos sobre el documento, como la codificación de caracteres (&lt;meta charset="UTF-8"&gt;), palabras clave y descripción para motores de búsqueda.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta" target="_blank">MAS INFORMACION</a></td> 
+        </tr>
+        <tr>
+          <td class="elemento">&lt;title&gt;</td>
+          <td>El elemento &lt;title&gt; se coloca dentro del &lt;head&gt; y define el título de la página web. Este título se muestra en la barra de título del navegador y es importante para la optimización de motores de búsqueda (SEO).</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title" target="_blank">MAS INFORMACION</a></td> 
+        </tr>
+        <tr>
+          <td class="elemento">&lt;link&gt;</td>
+          <td>Se usa para enlazar hojas de estilo externas (CSS) al documento HTML. Esto permite separar la estructura y el contenido de la presentación y el diseño.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link" target="_blank">MAS INFORMACION</a></td> 
+        </tr>
+        <tr>
+          <td class="elemento">&lt;style&gt;</td>
+          <td>Este elemento se utiliza para incluir estilos CSS directamente en el documento HTML. Es útil cuando se requieren estilos específicos para una página o sección de la misma.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style" target="_blank">MAS INFORMACION</a></td> 
+        </tr>
+        <tr>
+          <td class="elemento">&lt;script&gt;</td>
+          <td>Se utiliza para incorporar scripts o código JavaScript en la página web. Puede ser colocado en el &lt;head&gt; o al final del &lt;body&gt; para garantizar un rendimiento óptimo.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script" target="_blank">MAS INFORMACION</a></td> 
+        </tr>
+        <tr>
+          <td class="elemento">&lt;base&gt;</td>
+          <td>Define la URL base para los enlaces relativos en la página. Esto es útil cuando deseas establecer una URL base común para todos los enlaces.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base" target="_blank">MAS INFORMACION</a></td> 
+        </tr>
+        <tr>
+          <td class="elemento">&lt;noscript&gt;</td>
+          <td>Contiene contenido que se muestra cuando el navegador no admite JavaScript o cuando JavaScript está deshabilitado. Esto permite proporcionar una experiencia básica en caso de que los scripts no se ejecuten.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noscript" target="_blank" >MAS INFORMACION</a></td> 
+        </tr>
+        <tr>
+          <td class="elemento">&lt;meta charset="UTF-8"&gt;</td>
+          <td>Especifica la codificación de caracteres del documento como UTF-8, que es ampliamente utilizado y admite caracteres de diferentes idiomas.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Glossary/UTF-8" target="_blank" >MAS INFORMACION</a></td> 
+        </tr>
+        <tr>
+          <td class="elemento">&lt;body&gt;</td>
+          <td>Contiene el contenido principal de la página, incluyendo texto, imágenes y otros elementos visibles que se muestran en el navegador.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body" target="_blank">MAS INFORMACION</a></td> 
+        </tr>
+        <tr>
+          <td class="elemento">&lt;header&gt;</td>
+          <td>Representa la cabecera de una sección o del documento y generalmente contiene elementos como logotipos, títulos y enlaces de navegación.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header" target="_blank">MAS INFORMACION</a></td> 
+        </tr>
+        <tr>
+          <td class="elemento">&lt;nav&gt;</td>
+          <td>Se utiliza para definir la navegación principal de un documento, como menús o barras de navegación que permiten a los usuarios moverse por la página o el sitio web.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav" target="_blank">MAS INFORMACION</a></td> 
+        </tr>
+        <tr>
+          <td class="elemento">&lt;main&gt;</td>
+          <td>Define el contenido principal de un documento HTML. Debe ser único en cada página y representa la parte más importante de la misma.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main" target="_blank">MAS INFORMACION</a></td> 
+        </tr>
+        <tr>
+          <td class="elemento">&lt;article&gt;</td>
+          <td>Representa una sección independiente y autónoma de contenido que tiene sentido por sí misma. Por ejemplo, una publicación de blog o un artículo de noticias.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article" target="_blank">MAS INFORMACION</a></td> 
+        </tr>
+        <tr>
+          <td class="elemento">&lt;section&gt;</td>
+          <td>Define una sección temática dentro de un artículo o documento y generalmente se utiliza para agrupar contenido relacionado.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section" target="_blank">MAS INFORMACION</a></td> 
+        </tr>
+        <tr>
+          <td class="elemento">&lt;aside&gt;</td>
+          <td>Contiene contenido relacionado o complementario al contenido principal, como anuncios, barras laterales o notas adicionales.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside" target="_blank">MAS INFORMACION</a></td> 
+        </tr>
+        <tr>
+          <td class="elemento">&lt;footer&gt;</td>
+          <td>Representa el pie de página de una sección o del documento y generalmente incluye información de contacto o enlaces relacionados.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer" target="_blank">MAS INFORMACION</a></td> 
+        </tr>
+        <tr>
+          <td class="elemento">&lt;address&gt;</td>
+          <td>Define información de contacto, como una dirección de correo electrónico o una dirección física de contacto.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/address" target="_blank">MAS INFORMACION</a></td> 
+        </tr>
+        <tr>
+          <td class="elemento">&lt;h1&gt;&lt;h2&gt;&lt;h3&gt;&lt;h4&gt;&lt;h5&gt;&lt;h6&gt;</td>
+          <td>Estos elementos se utilizan para crear encabezados de diferentes niveles. &lt;h1&gt; es el encabezado más importante y suele usarse para el título principal de la página, mientras que &lt;h6&gt; es el menos importante en términos de jerarquía.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/h1" target="_blank">MAS INFORMACION</a></td> 
+        </tr>
+        <tr>
+          <td class="elemento">&lt;p&gt;</td>
+          <td>Define un párrafo de texto. Se utiliza para agrupar texto relacionado en párrafos distintos.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p" target="_blank">MAS INFORMACION</a></td> 
+        </tr>
+        <tr>
+          <td class="elemento">&lt;a&gt;</td>
+          <td>Crea hipervínculos o enlaces a otras páginas web o recursos. El atributo href especifica la URL a la que el enlace apunta.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a" target="_blank">MAS INFORMACION</a></td> 
+        </tr>
+        <tr>
+          <td class="elemento">&lt;abbr&gt;</td>
+          <td>Define una abreviatura y proporciona una descripción completa de la misma, que se muestra como un tooltip cuando el usuario pasa el mouse sobre ella.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/lt" target="_blank">MAS INFORMACION</a></td> 
+        </tr>
+        <tr>
+          <td class="elemento">&lt;acronym&gt;</td>
+          <td>Similar a &lt;abbr&gt;, pero específico para acrónimos. También proporciona una descripción completa.
+
+            &lt;strong&gt;: Hace que el texto se muestre en negrita para resaltarlo y darle énfasis.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/acronym" target="_blank">MAS INFORMACION</a></td> 
+        </tr>
+        <tr>
+          <td class="elemento">&lt;em&gt;</td>
+          <td>Hace que el texto se muestre en cursiva o enfatizado, indicando énfasis semántico.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em" target="_blank">MAS INFORMACION</a></td> 
+        </tr>
+        <tr>
+          <td class="elemento">&lt;mark&gt;</td>
+          <td>Resalta o marca un fragmento de texto con un color de fondo amarillo por defecto.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark" target="_blank">MAS INFORMACION</a></td> 
+        </tr>
+        <tr>
+          <td class="elemento">&lt;small&gt;</td>
+          <td>Reduce el tamaño del texto para indicar que es menos importante o para mostrar texto pequeño, como notas al pie.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/small" target="_blank">MAS INFORMACION</a></td> 
+        </tr>
+        <tr>
+          <td class="elemento">&lt;sub&gt;</td>
+          <td>Coloca el texto en una posición inferior, comúnmente utilizado para escribir fórmulas químicas y matemáticas.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sub" target="_blank">MAS INFORMACION</a></td> 
+        </tr>
+        <tr>
+          <td class="elemento">&lt;sup&gt;</td>
+          <td>Coloca el texto en una posición superior, como exponentes en ecuaciones matemáticas.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sup" target="_blank">MAS INFORMACION</a></td> 
+        </tr>
+        <tr>
+          <td class="elemento">&lt;del&gt;</td>
+          <td>Muestra texto eliminado con una línea horizontal a través de él, típicamente usado en documentos revisados.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/del" target="_blank">MAS INFORMACION</a></td> 
+        </tr>
+        <tr>
+          <td class="elemento">&lt;ins&gt;</td>
+          <td>Muestra texto insertado, a menudo con subrayado o una línea vertical.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/lt" target="_blank">MAS INFORMACION</a></td> 
+        </tr>
+        <tr>
+          <td class="elemento">&lt;dfn&gt;</td>
+          <td>Define una definición de un término o concepto, proporcionando claridad en el contexto.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dfn" target="_blank">MAS INFORMACION</a></td> 
+        </tr>
+        <tr>
+          <td class="elemento">&lt;time&gt;</td>
+          <td>Representa una fecha o tiempo en un formato específico, lo que facilita su interpretación por parte de las máquinas y la accesibilidad.</td>
+          <td><a class="link" href="" target="_blank">MAS INFORMACION</a></td> 
+        </tr>
+        <tr>
+          <td class="elemento">&lt;code&gt;</td>
+          <td>Se utiliza para mostrar código de programación. El texto dentro de este elemento se muestra en una fuente monoespaciada.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code" target="_blank">MAS INFORMACION</a></td> 
+        </tr>
+        <tr>
+          <td class="elemento">&lt;samp&gt;</td>
+          <td>Muestra una salida de programa de muestra, como resultados de comandos o código ejecutado.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/samp" target="_blank">MAS INFORMACION</a></td> 
+        </tr>
+        <tr>
+          <td class="elemento">&lt;kbd&gt;</td>
+          <td>Representa la entrada del teclado, como atajos de teclado o combinaciones de teclas.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/kdb" target="_blank">MAS INFORMACION</a></td> 
+        </tr>
+        <tr>
+          <td class="elemento">&lt;pre&gt;</td>
+          <td>Preserva el formato y el espaciado del texto, útil para mostrar código o texto con formato.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre" target="_blank">MAS INFORMACION</a></td> 
+        </tr>
+        <tr>
+          <td class="elemento">&lt;blockquote&gt;</td>
+          <td>Define un bloque de texto cit.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote" target="_blank">MAS INFORMACION</a></td> 
+        </tr>
+      </tbody>
+    </table>
+
+
+    <table class="tcentrado">
+        <caption id="LISTAS">LISTAS</caption>
+      <thead>
+        <tr>
+          <th>ELEMENTO</th>
+          <th>DESCRIPCION</th>
+          <th>MAS INFORMACION</th>
+        </tr>
+      </thead>
+      <tbody>
+    <tr>
+      <td class="elemento">&lt;ul&gt;</td>
+      <td>Este elemento se utiliza para crear una lista desordenada en HTML. Los elementos de la lista se muestran con viñetas o puntos, y no tienen un orden específico.</td>
+      <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul" target="_blank">MÁS INFORMACIÓN</a></td>
+    </tr>
+    <tr>
+      <td class="elemento">&lt;li&gt;</td>
+      <td>El elemento &lt;li&gt; se utiliza dentro de &lt;ul&gt; o &lt;ol&gt; para crear elementos de lista individuales. Cada &lt;li&gt; representa un elemento en la lista y generalmente se muestra con viñetas o puntos.</td>
+      <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li" target="_blank">MÁS INFORMACIÓN</a></td>
+    </tr>
+    <tr>
+      <td class="elemento">&lt;ol&gt;</td>
+      <td>Este elemento se utiliza para crear una lista ordenada en HTML. En una lista ordenada, los elementos de la lista se enumeran con números, letras o números romanos, dependiendo de la configuración.</td>
+      <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol" target="_blank">MÁS INFORMACIÓN</a></td>
+    </tr>
+    <tr>
+      <td class="elemento">&lt;dl&gt;</td>
+      <td>El elemento &lt;dl&gt; se utiliza para crear una lista de definición en HTML. En una lista de definición, se muestra una serie de términos (definiciones) junto con sus descripciones correspondientes.</td>
+      <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl" target="_blank">MÁS INFORMACIÓN</a></td>
+    </tr>
+    <tr>
+      <td class="elemento">&lt;dt&gt;</td>
+      <td>Este elemento se utiliza dentro de &lt;dl&gt; para definir un término o una entrada en la lista de definición. Los términos se suelen mostrar en negrita o de alguna manera que los destaque.</td>
+      <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dt" target="_blank">MÁS INFORMACIÓN</a></td>
+    </tr>
+    <tr>
+      <td class="elemento">&lt;dd&gt;</td>
+      <td>El elemento &lt;dd&gt; se utiliza dentro de &lt;dl&gt; para proporcionar la descripción o la definición del término definido en &lt;dt&gt;. Las descripciones suelen estar en texto normal y se muestran debajo del término correspondiente.</td>
+      <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dd" target="_blank">MÁS INFORMACIÓN</a></td>
+     </tr>
+    </tbody>
+      </table>
+
+
+
+      <table class="tcentrado">
+        <caption id="TABLAS">TABLAS</caption>
+      <thead>
+        <tr>
+          <th>ELEMENTO</th>
+          <th>DESCRIPCION</th>
+          <th>MAS INFORMACION</th>
+        </tr>
+      </thead>
+       <tbody>
+        <tr>
+          <td class="elemento">&lt;table&gt;</td>
+          <td>Se utiliza para crear una tabla en HTML. Las tablas son estructuras de datos que constan de filas y columnas, organizadas en celdas.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;caption&gt;</td>
+          <td>Este elemento se utiliza dentro de &lt;table&gt; para proporcionar un título o una descripción de la tabla. Aparece generalmente en la parte superior de la tabla.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/caption" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;thead&gt;</td>
+          <td>Se utiliza para definir la sección de encabezado de la tabla. Contiene filas que se utilizan para describir las columnas de la tabla.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/thead" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;tbody&gt;</td>
+          <td>Este elemento se utiliza para definir la sección de cuerpo de la tabla. Contiene filas y celdas que representan los datos reales de la tabla.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tbody" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;tfoot&gt;</td>
+          <td>Se utiliza para definir la sección de pie de tabla. Puede contener filas y celdas que se utilizan para resumir o proporcionar información adicional sobre los datos de la tabla.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tfoot" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;tr&gt;</td>
+          <td>Se utiliza para crear una fila dentro de la tabla. Cada fila contiene una serie de celdas que representan datos.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tr" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;th&gt;</td>
+          <td>Este elemento se utiliza para crear una celda de encabezado dentro de la fila de encabezado (&lt;thead&gt;). Se utiliza para etiquetar las columnas de la tabla y suele mostrarse en negrita y centrado.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/th" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;td&gt;</td>
+          <td>Se utiliza para crear una celda de datos dentro de una fila en el cuerpo de la tabla (&lt;tbody&gt;). Contiene el contenido real de la tabla.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/td" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+       </tbody>
+      </table>
+      
+  <table class="tcentrado">
+        <caption id="FORMULARIOS">FORMULARIOS</caption>
+      <thead>
+        <tr>
+          <th>ELEMENTO</th>
+          <th>DESCRIPCION</th>
+          <th>MAS INFORMACION</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="elemento">&lt;form&gt;</td>
+          <td>Se utiliza para crear un formulario en HTML que permite a los usuarios ingresar datos que luego se pueden enviar a un servidor para su procesamiento. Contiene elementos como campos de entrada, botones y etiquetas.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;input&gt;</td>
+          <td>&lt;input&gt; se utiliza para crear campos de entrada en un formulario, como campos de texto, casillas de verificación, botones de radio, campos ocultos, etc.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;textarea&gt;</td>
+          <td>&lt;textarea&gt; se utiliza para crear áreas de texto multilínea en un formulario, donde los usuarios pueden ingresar texto más largo, como comentarios o mensajes largos.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;select&gt;</td>
+          <td>&lt;select&gt; se utiliza para crear una lista desplegable en un formulario. Puede contener múltiples opciones representadas por elementos &lt;option&gt;.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;optgroup&gt;</td>
+          <td>&lt;optgroup&gt; se utiliza dentro de &lt;select&gt; para agrupar opciones relacionadas en la lista desplegable. Ayuda a organizar y estructurar las opciones.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/optgroup" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;option&gt;</td>
+          <td>&lt;option&gt; se utiliza dentro de &lt;select&gt; para definir las opciones disponibles en la lista desplegable.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/option" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;button&gt;</td>
+          <td>&lt;button&gt; se utiliza para crear botones en un formulario, que los usuarios pueden hacer clic para enviar el formulario o realizar otras acciones especificadas.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;label&gt;</td>
+          <td>&lt;label&gt; se utiliza para proporcionar una etiqueta descriptiva para un campo de entrada. Ayuda a los usuarios a comprender el propósito del campo y mejora la accesibilidad.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;fieldset&gt;</td>
+          <td>&lt;fieldset&gt; se utiliza para agrupar un conjunto de campos relacionados en un formulario. Puede contener múltiples campos y suele ir acompañado de una etiqueta &lt;legend&gt; para describir el conjunto.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;legend&gt;</td>
+          <td>&lt;legend&gt; se utiliza junto con &lt;fieldset&gt; para proporcionar una descripción o título para un conjunto de campos en un formulario.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/legend" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;datalist&gt;</td>
+          <td>&lt;datalist&gt; se utiliza junto con campos de entrada &lt;input&gt; para proporcionar una lista de sugerencias al usuario a medida que escribe en el campo.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;output&gt;</td>
+          <td>&lt;output&gt; se utiliza para mostrar resultados o cálculos basados en la entrada del usuario dentro del formulario.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/output" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;meter&gt;</td>
+          <td>&lt;meter&gt; se utiliza para crear medidores de rango, como barras de progreso o indicadores de nivel, para representar valores numéricos dentro de un rango específico.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meter" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;progress&gt;</td>
+          <td>&lt;progress&gt; se utiliza para crear barras de progreso que indican el progreso de una tarea en un formulario, como la carga de un archivo o el envío de datos.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="tcentrado">
+      <caption id="MULTIMEDIA">MULTIMEDIA</caption>
+      <thead>
+        <tr>
+          <th>ELEMENTO</th>
+          <th>DESCRIPCION</th>
+          <th>MAS INFORMACION</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="elemento">&lt;img&gt;</td>
+          <td>&lt;img&gt; se utiliza para incrustar imágenes en una página web. Puedes especificar la fuente de la imagen utilizando el atributo &lt;src&gt; y proporcionar texto alternativo para la accesibilidad con el atributo &lt;alt&gt;.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;audio&gt;</td>
+          <td>&lt;audio&gt; se utiliza para agregar archivos de audio a una página web. Puedes especificar la fuente del archivo de audio utilizando el atributo &lt;src&gt; y proporcionar controles de reproducción con atributos como &lt;controls&gt;.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;video&gt;</td>
+          <td>&lt;video&gt; se utiliza para agregar archivos de video a una página web. Al igual que con &lt;audio&gt;, puedes especificar la fuente del archivo de video y proporcionar controles de reproducción.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;source&gt;</td>
+          <td>&lt;source&gt; se utiliza dentro de elementos &lt;audio&gt; y &lt;video&gt; para especificar múltiples fuentes de medios. Esto permite al navegador seleccionar la mejor fuente de medios según el tipo y las capacidades del navegador.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/source" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;track&gt;</td>
+          <td>&lt;track&gt; se utiliza para agregar pistas de subtítulos o descripciones de audio a elementos de medios como &lt;video&gt; y &lt;audio&gt;. Puedes definir el tipo de pista y la fuente de la misma.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/track" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;map&gt;</td>
+          <td>&lt;map&gt; se utiliza junto con elementos &lt;area&gt; para crear mapas de imágenes interactivos. Puedes definir áreas en una imagen y vincularlas a enlaces o acciones específicas en la página web.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/map" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;area&gt;</td>
+          <td>&lt;area&gt; se utiliza dentro de un elemento &lt;map&gt; y define áreas en una imagen que se pueden hacer clic o activar de alguna otra manera. Cada área se vincula a una URL o acción específica.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/area" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+      </tbody>
+
+    </table>
+    <table class="tcentrado">
+      <caption id="INCRUSTACION">INCRUSTACION</caption>
+      <thead>
+        <tr>
+          <th>ELEMENTO</th>
+          <th>DESCRIPCION</th>
+          <th>MAS INFORMACION</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="elemento">&lt;iframe&gt;</td>
+          <td>&lt;iframe&gt; se utiliza para incrustar contenido externo dentro de una página web, como otra página web, videos de YouTube, mapas de Google, etc. Puedes especificar la fuente del contenido utilizando el atributo &lt;src&gt;.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;object&gt;</td>
+          <td>&lt;object&gt; se utiliza para incrustar objetos multimedia, como Flash, en una página web. Puedes especificar la fuente y el tipo del objeto, así como proporcionar contenido alternativo en caso de que el navegador no pueda mostrar el objeto.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/object" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;embed&gt;</td>
+          <td>&lt;embed&gt; se utiliza para incrustar contenido multimedia, como audio o video, en una página web. Debes especificar la fuente y el tipo del contenido, así como las dimensiones de la visualización.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/embed" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;canvas&gt;</td>
+          <td>&lt;canvas&gt; se utiliza para dibujar gráficos, imágenes y animaciones en una página web utilizando JavaScript. Proporciona un lienzo en blanco en el que puedes dibujar dinámicamente.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;svg&gt;</td>
+          <td>&lt;svg&gt; se utiliza para crear gráficos vectoriales escalables (SVG) en una página web. Los gráficos SVG son imágenes vectoriales que se pueden escalar sin pérdida de calidad y se pueden animar y manipular con JavaScript.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/svg" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+      </tbody>
+
+    </table>
+    <table class="tcentrado">
+      <caption id="CONTENIDO_TEXTUAL">CONTENIDO TEXTUAL</caption>
+      <thead>
+        <tr>
+          <th>ELEMENTO</th>
+          <th>DESCRIPCION</th>
+          <th>MAS INFORMACION</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="elemento">&lt;mark&gt;</td>
+          <td>&lt;mark&gt; se utiliza para resaltar o marcar partes de un texto dentro de un párrafo u otro elemento de texto. Es útil para resaltar términos de búsqueda o partes importantes del contenido.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;ruby&gt;, &lt;rt&gt;, &lt;rp&gt;</td>
+          <td>&lt;ruby&gt;, &lt;rt&gt; y &lt;rp&gt; se utilizan para representar texto ruby, que es una forma de anotación de texto comúnmente utilizada en la tipografía asiática. &lt;ruby&gt; contiene el texto base, &lt;rt&gt; contiene la anotación, y &lt;rp&gt; proporciona una opción de representación en caso de que el navegador no admita ruby.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ruby" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;bdo&gt;</td>
+          <td>&lt;bdo&gt; se utiliza para especificar la dirección de texto en la que debe mostrarse el contenido. Puede usarse para forzar el texto a mostrarse de derecha a izquierda o de izquierda a derecha, independientemente de la dirección del idioma de la página.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/bdo" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;wbr&gt;</td>
+          <td>&lt;wbr&gt; se utiliza para sugerir un lugar potencial de división de una palabra larga en una línea de texto. Es útil para mejorar la legibilidad y la apariencia de páginas web con texto largo y evita que las palabras se corten de manera poco estética en líneas separadas.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/wbr" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;ins&gt;</td>
+          <td>&lt;ins&gt; se utiliza para marcar texto que ha sido insertado en el documento, por ejemplo, en comparación con una versión anterior del mismo documento. Puede ser útil para resaltar adiciones o cambios en el contenido.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ins" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;del&gt;</td>
+          <td>&lt;del&gt; se utiliza para marcar texto que ha sido eliminado o tachado en el documento, por ejemplo, en comparación con una versión anterior del mismo documento. Puede ser útil para mostrar supresiones o cambios en el contenido.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/del" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;blockquote&gt;</td>
+          <td>&lt;blockquote&gt; se utiliza para definir un bloque de texto citado en HTML. Suelen representar fragmentos de texto de otras fuentes y se formatean de manera especial, como con sangría o un estilo diferente, para indicar que son citas textuales.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+      </tbody>
+
+    </table>
+    <table class="tcentrado">
+      <caption id="AGRUPACION_DE_CONTENIDO">AGRUPACION DE CONTENIDO</caption>
+      <thead>
+        <tr>
+          <th>ELEMENTO</th>
+          <th>DESCRIPCION</th>
+          <th>MAS INFORMACION</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="elemento">&lt;header&gt;</td>
+          <td>&lt;header&gt; se utiliza para representar la sección de encabezado de una página web o de una sección de contenido. Generalmente contiene elementos como logotipos, títulos y enlaces de navegación que son relevantes para la parte superior de la página o sección.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;nav&gt;</td>
+          <td>&lt;nav&gt; se utiliza para definir una sección de navegación en una página web. Contiene enlaces de navegación que permiten a los usuarios acceder a diferentes partes del sitio o a otras páginas relacionadas.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;footer&gt;</td>
+          <td>&lt;footer&gt; se utiliza para representar la sección de pie de página de una página web o de una sección de contenido. Generalmente contiene información de contacto, enlaces a políticas de privacidad y otros elementos relevantes para el final de la página o sección.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;main&gt;</td>
+          <td>&lt;main&gt; se utiliza para representar el contenido principal de una página web. Debe ser único en cada página y no debe usarse para encabezados, pie de página o navegación. Ayuda a mejorar la accesibilidad y la estructura de la página.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+      </tbody>
+
+    </table>
+    <table class="tcentrado">
+      <caption id="CONTENIDO_SEMANTICO">CONTENIDO SEMANTICO</caption>
+      <thead>
+        <tr>
+          <th>ELEMENTO</th>
+          <th>DESCRIPCION</th>
+          <th>MAS INFORMACION</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="elemento">&lt;article&gt;</td>
+          <td>&lt;article&gt; se utiliza para representar una pieza de contenido independiente y autónoma en una página web. Debe tener sentido por sí mismo y ser reutilizable en otros contextos, como una entrada de blog, una noticia o un artículo.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;section&gt;</td>
+          <td>&lt;section&gt; se utiliza para agrupar contenido relacionado en una página web. Ayuda a dividir y estructurar el contenido de manera semántica, como capítulos en un libro o secciones en un artículo.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;aside&gt;</td>
+          <td>&lt;aside&gt; se utiliza para representar contenido relacionado pero no esencial en una página web. Puede contener información como barras laterales, publicidad, notas relacionadas y más. A menudo se coloca junto al contenido principal pero no es parte fundamental de este.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;details&gt;</td>
+          <td>&lt;details&gt; se utiliza para crear un widget de detalles en una página web que permite al usuario mostrar u ocultar contenido adicional. El contenido se coloca dentro de &lt;details&gt;, y su título se define con el elemento &lt;summary&gt;.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;summary&gt;</td>
+          <td>&lt;summary&gt; se utiliza en combinación con el elemento &lt;details&gt; para proporcionar un título o encabezado que el usuario puede hacer clic para mostrar u ocultar el contenido adicional dentro del widget de detalles.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;figure&gt;</td>
+          <td>&lt;figure&gt; se utiliza para encapsular contenido multimedia, como imágenes o gráficos, junto con su descripción utilizando el elemento &lt;figcaption&gt;. Ayuda a proporcionar una estructura semántica a los contenidos relacionados con multimedia.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;figcaption&gt;</td>
+          <td>&lt;figcaption&gt; se utiliza junto con el elemento &lt;figure&gt; para proporcionar una descripción o título para el contenido multimedia que está encapsulado en &lt;figure&gt;. Ayuda a mejorar la accesibilidad y la comprensión del contenido.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figcaption" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+      </tbody>
+
+    </table>
+    <table class="tcentrado">
+      <caption id="ELEMENTOS_DE_LINEA_Y_TEXTO">ELEMENTOS DE LINEA Y TEXTO</caption>
+      <thead>
+        <tr>
+          <th>ELEMENTO</th>
+          <th>DESCRIPCION</th>
+          <th>MAS INFORMACION</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="elemento">&lt;a&gt;</td>
+          <td>&lt;a&gt; se utiliza para crear hipervínculos o enlaces en una página web. Puedes especificar la URL de destino en el atributo &lt;href&gt; y el texto del enlace entre las etiquetas &lt;a&gt;.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;abbr&gt;</td>
+          <td>&lt;abbr&gt; se utiliza para definir una abreviatura o acrónimo en el texto. Puedes proporcionar una descripción completa utilizando el atributo &lt;title&gt; para mejorar la accesibilidad.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/abbr" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;b&gt;</td>
+          <td>&lt;b&gt; se utiliza para aplicar un estilo de texto en negrita al contenido. Sin embargo, no tiene un significado semántico específico y se recomienda utilizar &lt;strong&gt; en su lugar para textos importantes.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/b" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;br&gt;</td>
+          <td>&lt;br&gt; se utiliza para crear un salto de línea en el texto. No necesita una etiqueta de cierre y se usa para separar el contenido en diferentes líneas o para introducir espacios en blanco en el texto.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/br" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;cite&gt;</td>
+          <td>&lt;cite&gt; se utiliza para marcar el título de una obra, como un libro o una película, en el texto. Proporciona un formato especial para la cita y se utiliza para indicar la fuente de una referencia.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/cite" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;code&gt;</td>
+          <td>&lt;code&gt; se utiliza para representar fragmentos de código en el texto. Mantiene el formato de fuente monoespaciada y se usa para destacar código o comandos en el contenido web. </td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;em&gt;</td>
+          <td>&lt;em&gt; se utiliza para enfatizar el texto y se representa generalmente en cursiva. Puede indicar que una palabra o frase es importante en el contexto del contenido y es un elemento de estilo en lugar de formato estricto de presentación.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;i&gt;</td>
+          <td>&lt;i&gt; se utiliza para aplicar estilo en cursiva al texto. Al igual que &lt;b&gt;, no tiene un significado semántico específico y se recomienda utilizar &lt;em&gt; en su lugar para énfasis en el contenido.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;mark&gt;</td>
+          <td>&lt;mark&gt; se utiliza para resaltar o marcar partes de un texto dentro de un párrafo u otro elemento de texto. Es útil para resaltar términos de búsqueda o partes importantes del contenido.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;q&gt;</td>
+          <td>&lt;q&gt; se utiliza para marcar citas cortas o textos que deben aparecer entre comillas en el contenido. Agrega comillas automáticamente al texto y se utiliza para indicar que el texto es una cita directa de otra fuente.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;s&gt;</td>
+          <td>&lt;s&gt; se utiliza para representar texto que ha sido tachado o eliminado del contenido. A menudo se usa en revisiones o cambios en el contenido para mostrar lo que se ha eliminado. No se debe utilizar para agregar énfasis o importancia negativa al texto.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/s" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;small&gt;</td>
+          <td>&lt;small&gt; se utiliza para reducir el tamaño del texto en relación con el texto circundante. Puede ser útil para notas al pie o texto legal que debe aparecer en un tamaño de fuente más pequeño.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/small" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;span&gt;</td>
+          <td>&lt;span&gt; se utiliza como un contenedor genérico para aplicar estilos o scripts a partes específicas del contenido de texto. No tiene un significado semántico propio, pero se puede utilizar junto con CSS y JavaScript para manipular el contenido de manera más precisa.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;strong&gt;</td>
+          <td>&lt;strong&gt; se utiliza para aplicar un estilo de texto en negrita y para indicar que el texto contenido es de importancia fuerte o enfática en el contexto. Se recomienda su uso en lugar de &lt;b&gt; para enfatizar el significado semántico del texto.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;sub&gt;</td>
+          <td>&lt;sub&gt; se utiliza para representar texto subíndice, que es texto que aparece más pequeño y ligeramente por debajo de la línea de base del texto normal. Se usa comúnmente en fórmulas químicas o matemáticas.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sub" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;sup&gt;</td>
+          <td>&lt;sup&gt; se utiliza para representar texto superíndice, que es texto que aparece más pequeño y ligeramente por encima de la línea de base del texto normal. Se usa comúnmente en fórmulas químicas o matemáticas, así como en notas al pie o exponentes.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sup" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        
+      </tbody>
+
+    </table>
+    <table class="tcentrado">
+      <caption id="ELEMENTOS_DE_CONTENIDO_INTERACTIVO">ELEMENTOS DE CONTENIDO INTERACTIVO</caption>
+      <thead>
+        <tr>
+          <th>ELEMENTO</th>
+          <th>DESCRIPCION</th>
+          <th>MAS INFORMACION</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="elemento">&lt;details&gt;</td>
+          <td>&lt;details&gt; se utiliza para crear un widget de detalles en una página web que permite al usuario mostrar u ocultar contenido adicional. El contenido se coloca dentro de &lt;details&gt;, y su título se define con el elemento &lt;summary&gt;.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;summary&gt;</td>
+          <td>&lt;summary&gt; se utiliza en combinación con el elemento &lt;details&gt; para proporcionar un título o encabezado que el usuario puede hacer clic para mostrar u ocultar el contenido adicional dentro del widget de detalles.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;menu&gt;</td>
+          <td>&lt;menu&gt; se utiliza para definir un menú contextual o de aplicaciones en una página web. Puede contener elementos &lt;menuitem&gt; que representan las opciones del menú y se utilizan en aplicaciones web para acciones contextuales.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/menu" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;menuitem&gt;</td>
+          <td>&lt;menuitem&gt; se utiliza dentro de un elemento &lt;menu&gt; para representar una opción de menú en un menú contextual o de aplicaciones. Cada &lt;menuitem&gt; puede tener un comando asociado que se ejecuta cuando se selecciona la opción del menú.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/menuitem" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;dialog&gt;</td>
+          <td>&lt;dialog&gt; se utiliza para crear cuadros de diálogo modales en una página web. Los cuadros de diálogo modales son ventanas emergentes que requieren la interacción del usuario antes de continuar con la navegación. &lt;dialog&gt; contiene contenido adicional que se muestra en el cuadro de diálogo.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        
+      </tbody>
+
+    </table>
+    <table class="tcentrado">
+      <caption id="ELEMENTOS_DE_TABULACION_DE_CONTENIDO">ELEMENTOS DE TABULACION DE CONTENIDO</caption>
+      <thead>
+        <tr>
+          <th>ELEMENTO</th>
+          <th>DESCRIPCION</th>
+          <th>MAS INFORMACION</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="elemento">&lt;hgroup&gt;</td>
+          <td>&lt;hgroup&gt; se utiliza para agrupar elementos de encabezado &lt;h1&gt; a &lt;h6&gt; cuando se desean aplicar estilos o etiquetas adicionales a todo el grupo de encabezados. Sin embargo, &lt;hgroup&gt; ha sido eliminado en HTML5 y se recomienda no utilizarlo.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hgroup" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;figure&gt;</td>
+          <td>&lt;figure&gt; se utiliza para encapsular contenido multimedia, como imágenes o gráficos, junto con su descripción utilizando el elemento &lt;figcaption&gt;. Ayuda a proporcionar una estructura semántica a los contenidos relacionados con multimedia.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;figcaption&gt;</td>
+          <td>&lt;figcaption&gt; se utiliza junto con el elemento &lt;figure&gt; para proporcionar una descripción o título para el contenido multimedia que está encapsulado en &lt;figure&gt;. Ayuda a mejorar la accesibilidad y la comprensión del contenido.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figcaption" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;main&gt;</td>
+          <td>&lt;main&gt; se utiliza para representar el contenido principal de una página web. Debe ser único en cada página y no debe usarse para encabezados, pie de página o navegación. Ayuda a mejorar la accesibilidad y la estructura de la página.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;mark&gt;</td>
+          <td>&lt;mark&gt; se utiliza para resaltar o marcar partes de un texto dentro de un párrafo u otro elemento de texto. Es útil para resaltar términos de búsqueda o partes importantes del contenido.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;time&gt;</td>
+          <td>&lt;time&gt; se utiliza para representar una fecha o hora en una página web. Puede ser útil para marcar fechas de eventos, publicaciones o cualquier otra información relacionada con el tiempo. El atributo  &lt;datetime</code> se usa para proporcionar la fecha y hora en un formato específico para la máquina.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;details&gt;</td>
+          <td>&lt;details&gt; se utiliza para crear un widget de detalles en una página web que permite al usuario mostrar u ocultar contenido adicional. El contenido se coloca dentro de &lt;details&gt;, y su título se define con el elemento &lt;summary&gt;.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;summary&gt;</td>
+          <td>&lt;summary&gt; se utiliza en combinación con el elemento &lt;details&gt; para proporcionar un título o encabezado que el usuario puede hacer clic para mostrar u ocultar el contenido adicional dentro del widget de detalles.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>        
+      </tbody>
+
+    </table>
+    <table class="tcentrado">
+      <caption id="ELEMENTOS_DE_EDICION">ELEMENTOS DE EDICION</caption>
+      <thead>
+        <tr>
+          <th>ELEMENTO</th>
+          <th>DESCRIPCION</th>
+          <th>MAS INFORMACION</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="elemento">&lt;ins&gt;</td>
+          <td>&lt;ins&gt; se utiliza para representar texto o contenido que ha sido insertado en un documento o página web. Es útil para mostrar adiciones o cambios en el contenido y se suele mostrar subrayado por defecto en la mayoría de los navegadores.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ins" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;del&gt;</td>
+          <td>&lt;del&gt; se utiliza para representar texto o contenido que ha sido eliminado o tachado de un documento o página web. Es útil para mostrar eliminaciones o cambios en el contenido y se suele mostrar con una línea a través del texto en la mayoría de los navegadores.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/del" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;s&gt;</td>
+          <td>&lt;s&gt; se utiliza para representar texto o contenido que ha sido tachado o eliminado del contenido original. Es similar a &lt;del&gt; y se utiliza para mostrar cambios o eliminaciones, pero no tiene el mismo significado semántico en términos de tiempo o contexto que &lt;del&gt; o &lt;ins&gt;.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/s" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;strike&gt;</td>
+          <td>&lt;strike&gt; se solía utilizar para representar texto tachado, similar a &lt;s&gt; y &lt;del&gt;. Sin embargo, ha sido obsoleto en HTML5, y se recomienda usar &lt;del&gt; o &lt;s&gt; en su lugar para representar eliminaciones o cambios en el contenido.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strike" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;abbr&gt;</td>
+          <td>&lt;abbr&gt; se utiliza para definir una abreviatura o acrónimo en el texto. Puedes proporcionar una descripción completa utilizando el atributo &lt;title&gt; para mejorar la accesibilidad y explicar el significado de la abreviatura o acrónimo.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/abbr" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;dfn&gt;</td>
+          <td>&lt;dfn&gt; se utiliza para representar la definición de un término en el texto. Es útil cuando se desea marcar un término específico en el contenido y proporcionar una explicación o definición más detallada utilizando el atributo &lt;title&gt;.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dfn" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;cite&gt;</td>
+          <td>&lt;cite&gt; se utiliza para marcar el título de una obra, como un libro o una película, en el texto. Proporciona un formato especial para la cita y se utiliza para indicar la fuente de una referencia o trabajo citado en el contenido.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/cite" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;blockquote&gt;</td>
+          <td>&lt;blockquote&gt; se utiliza para definir un bloque de texto citado en el contenido. Por lo general, se usa para citas largas o bloques de texto de otros autores y ayuda a distinguir visualmente el texto citado del texto circundante.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;q&gt;</td>
+          <td>&lt;q&gt; se utiliza para marcar citas cortas o textos que deben aparecer entre comillas en el contenido. Agrega comillas automáticamente al texto y se utiliza para indicar que el texto es una cita directa de otra fuente o una frase corta que se debe destacar.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;address&gt;</td>
+          <td>&lt;address&gt; se utiliza para representar información de contacto o detalles de dirección en el contenido. A menudo se coloca en el pie de página de una página web y puede incluir información como direcciones de correo electrónico o números de teléfono de contacto.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/address" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>        
+      </tbody>
+
+    </table>
+    <table class="tcentrado">
+      <caption id="ELEMENTOS_DE_AGRUPACION_DE_CONTENIDO">ELEMENTOS DE AGRUPACION DE CONTENIDO</caption>
+      <thead>
+        <tr>
+          <th>ELEMENTO</th>
+          <th>DESCRIPCION</th>
+          <th>MAS INFORMACION</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="elemento">&lt;hr&gt;</td>
+          <td>&lt;hr&gt; se utiliza para crear una línea horizontal en una página web. Generalmente se utiliza para separar secciones de contenido o elementos visuales en la página y no requiere una etiqueta de cierre.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;pre&gt;</td>
+          <td>&lt;pre&gt; se utiliza para representar texto preformateado, lo que significa que el texto se muestra exactamente como está escrito en el código fuente, manteniendo espacios en blanco, saltos de línea y tabulaciones. Es útil para mostrar código o texto con formato especial donde la presentación exacta es importante.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+      </tbody>
+    </table>
+
+
+    </table>
+    <table class="tcentrado">
+      <caption id="ELEMENTOS_DE_FORMATO_DE_CONTENIDO">ELEMENTOS DE FORMATO DE CONTENIDO</caption>
+      <thead>
+        <tr>
+          <th>ELEMENTO</th>
+          <th>DESCRIPCION</th>
+          <th>MAS INFORMACION</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="elemento">&lt;b&gt;</td>
+          <td>&lt;b&gt; se utiliza para aplicar formato de texto en negrita a un elemento o parte del texto. Sin embargo, no tiene un significado semántico específico y se recomienda su uso limitado en favor de &lt;strong&gt; para enfatizar el significado semántico del texto.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/b" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;em&gt;</td>
+          <td>&lt;em&gt; se utiliza para aplicar formato de texto en cursiva o énfasis a un elemento o parte del texto. Se utiliza para resaltar palabras o frases que deben enfatizarse en el contexto del contenido.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;i&gt;</td>
+          <td>&lt;i&gt; se utiliza para aplicar formato de texto en cursiva a un elemento o parte del texto. Sin embargo, al igual que &lt;b&gt;, no tiene un significado semántico específico y se recomienda su uso limitado en favor de &lt;em&gt; para enfatizar el significado semántico del texto en itálica.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;strong&gt;</td>
+          <td>&lt;strong&gt; se utiliza para aplicar formato de texto en negrita y para indicar que el texto contenido es de importancia fuerte o enfática en el contexto. Se recomienda su uso en lugar de &lt;b&gt; para enfatizar el significado semántico del texto.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;small&gt;</td>
+          <td>&lt;small&gt; se utiliza para representar texto o contenido que es más pequeño en tamaño que el texto circundante. Puede ser útil para notas al pie, leyendas o contenido que requiera un tamaño de fuente más pequeño para fines estilísticos o de diseño.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/small" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;sub&gt;</td>
+          <td>&lt;sub&gt; se utiliza para representar texto subíndice, que es texto que aparece más pequeño y ligeramente por debajo de la línea de base del texto normal. Se usa comúnmente en fórmulas químicas o matemáticas para representar índices inferiores o en notaciones científicas.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sub" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;sup&gt;</td>
+          <td>&lt;sup&gt; se utiliza para representar texto superíndice, que es texto que aparece más pequeño y ligeramente por encima de la línea de base del texto normal. Se usa comúnmente en fórmulas químicas o matemáticas, así como en notas al pie o exponentes en textos científicos o técnicos.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sup" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;mark&gt;</td>
+          <td>&lt;mark&gt; se utiliza para resaltar partes del texto o del contenido con un color de fondo amarillo. Es útil para señalar términos de búsqueda o partes importantes del contenido que se deseen destacar visualmente en una página web.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;ruby&gt;, &lt;rt&gt;, &lt;rp&gt;</td>
+          <td>&lt;ruby&gt; se utiliza para representar texto ruby, que es una anotación o explicación pequeña que se muestra junto a un carácter o palabra. &lt;rt&gt; se utiliza para definir el texto ruby y &lt;rp&gt; se utiliza para proporcionar una alternativa de visualización en navegadores que no admiten ruby. Es común en idiomas como el japonés para la lectura de caracteres kanji.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ruby" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        <tr>
+          <td class="elemento">&lt;bdo&gt;</td>
+          <td>&lt;bdo&gt; se utiliza para especificar la dirección del texto en un elemento, como de derecha a izquierda para idiomas como el árabe o de izquierda a derecha para la mayoría de los idiomas occidentales. Puede ser útil cuando se necesita controlar la dirección del texto en elementos específicos.</td>
+          <td><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/bdo" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+        
+      </tbody>
+
+    </table>
+    <table class="tcentrado">
+      <caption id="ELEMENTOS_DE_COMENTARIO">ELEMENTOS DE COMENTARIO</caption>
+      <thead>
+        <tr>
+          <th>ELEMENTO</th>
+          <th>DESCRIPCION</th>
+          <th>MAS INFORMACION</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="elemento">&lt;!-- ... --&gt;</td>
+          <td>Los comentarios en HTML se crean utilizando la sintaxis &lt;!-- texto de comentario --&gt;. Los comentarios son invisibles para los usuarios y se utilizan para agregar notas o explicaciones en el código fuente de una página web. Los navegadores web ignoran completamente el contenido de los comentarios, por lo que no se muestran en la página web final.</td>
+          <td><a class="link" href="" target="_blank">MÁS INFORMACIÓN</a></td>
+        </tr>
+      </tbody>
+    </table>
+
+  </main>
+
+  <footer>
+    Pie de Página &copy; 2023
+  </footer>
+</body>
+</html>
